@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizjoSupport</title>
+    <link rel="stylesheet" href="css/onas.css">
+    <link rel="stylesheet" href="./js/onas.js">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,400&display=swap" rel="stylesheet">
+
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,400&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Condensed:wght@700&family=Roboto+Slab:wght@400;500&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div class="container">
+    <section class="top-nav">
+      <div>
+          <h1 id="logo">
+              <a href="index.html">Fizjo Support</a>
+          </h1>
+      </div>
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+      <div class='menu-button'></div>
+    </label>
+      <ul class="menu">
+        <li><a href="index.html">Strona główna</a></li>
+        <li><a href="cennik.html">Cennik</a></li>
+        <li><a href="onas.html">O nas</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+
+      <a href="kontakt.html"> <button id="kontakt">Umów się!</button></a>
+
+    </section>
+      <div class="topONas">
+          <h1>O nas</h1>
+      </div>
+
+      <div id="mid">
+        <h1>Kursy i odbyte szkolenia</h1>
+        <div class="midl">
+          
+       <button class="w3-button w3-black" onclick="plusDivs(-1)">&#10094;</button>
+
+                <img class="mySlides" src="./img/c1.jpg">
+                <img class="mySlides" src="./img/c2.jpg">
+                <img class="mySlides" src="./img/c3.jpg">
+                <img class="mySlides" src="./img/c4.jpg">
+                <img class="mySlides" src="./img/c5.jpg">
+                <img class="mySlides" src="./img/c6.jpg">
+                <img class="mySlides" src="./img/c7.jpg">
+                <img class="mySlides" src="./img/c8.jpg">
+                <img class="mySlides" src="./img/c9.jpg">
+                <img class="mySlides" src="./img/c10.jpg">
+                <img class="mySlides" src="./img/c11.jpg">
+                <img class="mySlides" src="./img/c12.jpg">
+                <img class="mySlides" src="./img/c13.jpg">
+                <img class="mySlides" src="./img/c14.jpg">
+                <img class="mySlides" src="./img/c15.jpg">
+                <img class="mySlides" src="./img/c16.jpg">
+                <img class="mySlides" src="./img/c17.jpg">
+                <img class="mySlides" src="./img/c18.jpg">
+                <img class="mySlides" src="./img/c19.jpg">
+
+
+                <button class="w3-button w3-black" onclick="plusDivs(1)">&#10095;</button>
+               
+                <script>
+                var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+ showDivs(slideIndex += n);
+                    }
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  
+ 
+ x[slideIndex-1].style.display = "block";  
+}
+
+
+                </script> 
+            </div>
+        </div>
+
+        <div class="end">
+
+          <div class="endBox"><h1>Z czym Ci pomożemy? </h1>
+            <p>W naszym gabinecie znajdziecie państwo pomoc w zakresie kończyn dolnych i górnych oraz kręgosłupa</p>
+            <ul>
+          <li>problemy z kręgosłupem</li>
+          <li>problemy z kończynami</li>
+            <li>Migrena</li>
+          </ul>
+        </div>
+
+        </div>
+        
+        <div class="footer">  
+          <h1 id="FooterFizjo">Fizjo Support</h1> 
+          <div class="wrapper">
+          
+              <a href="https://www.facebook.com/fizjosupportfrackowiak" target="_blank"class="icon facebook">
+                  <div class="tooltip">FizjoSupport</div>
+                  <span><i class="fab fa-facebook-f"></i></span>
+                </a>
+                <a href="#" class="icon twitter">
+                  <div class="tooltip">@Fizjo_Support</div>
+                  <span><i class="fab fa-twitter"></i></span>
+                </a>
+                <a href="https://www.instagram.com/fizjosupport/" target="_blank" class="icon instagram">
+                  <div class="tooltip">FizjoSupport</div>
+                  <span><i class="fab fa-instagram"></i></span>
+                </a>
+              
+          </div>
+      </div>
+      <div class="copyright"><p>Fizjo Support 2022 © Wszystkie prawa zastrzeżone</p></div>
+  </div>
+    </div>
+</body>

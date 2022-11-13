@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizjoSupport</title>
+    <link rel="stylesheet" href="css/kontakt.css">
+    <link rel="stylesheet" href="./js/kontakt.js">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,400&display=swap" rel="stylesheet">
+
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,400&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Condensed:wght@700&family=Roboto+Slab:wght@400;500&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <script src="https://kit.fontawesome.com/3692d1c849.js" crossorigin="anonymous"></script>
+    <div class="container">
+        <section class="top-nav">
+            <div>
+                <h1 id="logo">
+                  <a href="./index.html">Fizjo Support</a>
+                </h1>
+            </div>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+          </label>
+            <ul class="menu">
+              <li><a href="./index.html">Strona główna</a></li>
+              <li><a href="./cennik.html">Cennik</a></li>
+              <li><a href="./onas.html">O nas</a></li>
+              <li><a href="./kontakt.html">Kontakt</a></li>
+            </ul>
+
+            <a href="./kontakt.html"> <button id="kontakt">Umów się!</button></a>
+
+          </section>
+            
+          <div class="top">
+              <h1>KONTAKT</h1>
+              
+          </div>
+
+          <div id="mid">
+            <div class="tele">
+              <i class="fa fa-phone fa-3x" style="color:gold;"></i>
+              tel.502 277 923
+            </div>
+            <div class="mail">
+              <i class="fa fa-envelope fa-3x" style="color:gold;"></i>
+              
+              hm.frackowiak@gmail.com
+            </div>
+            <div class="uli">
+              <i class="fa fa-location-dot fa-3x" style="color:gold; "></i>
+              Siedlecka 6, Police, Poland, 72-010
+              </div>
+          </div>
+    
+          <div id="map">      <script>
+             var marker = new L.marker([53.544790, 14.556480]);
+   var map = L.map('map').setView([53.544790,14.556480],13);
+  marker.addTo(map);
+  
+   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+
+  const z = document.getElementsByClassName("mid");
+        </script></div>
+
+           <div class="footer">  
+            <h1 id="FooterFizjo">Fizjo Support</h1> 
+            <div class="wrapper">
+            
+                <a href="https://www.facebook.com/fizjosupportfrackowiak" target="_blank"class="icon facebook">
+                    <div class="tooltip">FizjoSupport</div>
+                    <span><i class="fab fa-facebook-f"></i></span>
+                  </a>
+                  <a href="#" class="icon twitter">
+                    <div class="tooltip">@Fizjo_Support</div>
+                    <span><i class="fab fa-twitter"></i></span>
+                  </a>
+                  <a href="https://www.instagram.com/fizjosupport/" target="_blank" class="icon instagram">
+                    <div class="tooltip">FizjoSupport</div>
+                    <span><i class="fab fa-instagram"></i></span>
+                  </a>
+                
+            </div>
+        </div>
+        <div class="copyright"><p>Fizjo Support 2022 © Wszystkie prawa zastrzeżone</p></div>
+    </div>
+    <script src="script.js"></script>
+    <script src="kontakt.js">
+      var marker = new L.marker([53.544790, 14.556480]);
+      var map = L.map('map').setView([53.544790,14.556480],);
+     marker.addTo(map);
+     
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+     }).addTo(map);
+    </script>
+</body>
+</html>
